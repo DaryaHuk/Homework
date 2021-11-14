@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+	width:300px;
+	height:19px;
+	background-color:white;
+}
+
+.preloader {
+    width:250px;
+	height:19px;
+	background-color:green;
+	animation-name:loading;
+	animation-duration:3.5s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+    border-radius:10px;
+}
+
+.text {
+    color: green;
+    margin-top: 100px;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes loading {
+    0%{
+      width: 0%;
+    }
+
+    25%{
+        width: 25%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+    75%{
+        width: 75%;
+    }
+    
+    100%{
+        width: 100%;
+    }
+}
